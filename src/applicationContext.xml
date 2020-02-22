@@ -17,12 +17,10 @@
 	</bean>
 	
 	<bean id="myCricketCoach" class="com.amritesh.springdemo.CricketCoach">
+		<!-- Object property setter injection -->
 		<property name="fortuneService" ref="myFortune" />
+		<!-- Literal setter injection -->
+		<property name="emailAddress" value="amritesh@gmail.com" />
+		<property name="team" value="KKR" />
 	</bean>
-	
 </beans>
-
-
-
-
-
