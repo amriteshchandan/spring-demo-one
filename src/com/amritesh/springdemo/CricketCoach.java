@@ -10,6 +10,14 @@ public class CricketCoach implements Coach {
 		System.out.println("[CricketCoach] no-arg constructor");
 	};
 	
+	public void doMyStrartUpStuff() {
+		System.out.println("[CricketCoach] doMyStrartUpStuff");
+	}
+	
+	public void doMyCleanUpStuff() {
+		System.out.println("[CricketCoach] doMyCleanUpStuff");
+	}
+	
 	// Spring will call this setter method
 	public void setFortuneService(FortuneService fortuneService) {
 		System.out.println("[CricketCoach] setFortuneService");
@@ -28,7 +36,7 @@ public class CricketCoach implements Coach {
 	public String getTeam() {
 		return team;
 	}
-
+	
 	public void setTeam(String team) {
 		System.out.println("[CricketCoach] setTeam");
 		this.team = team;
